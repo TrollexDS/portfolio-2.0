@@ -279,7 +279,7 @@ p {
 }
 
 .project-card.small.simplestream-ds {
-    background-image: url('images/ss-iAP.png');
+    background-image: url('images/project-card/ss-iAP.png');
     background-size: cover;
     background-position: center;
 }
