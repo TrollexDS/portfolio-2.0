@@ -986,8 +986,21 @@ input:checked+.slider:before {
         grid-column: 3 / span 2;
     }
 
+    .case-study {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .case-study h3 {
+        grid-column: span 4;
+    }
+
     .case-study p {
-        max-width: calc((100% / 6) * 5);
+        /*max-width: calc((100% / 6) * 5);*/
+        grid-column: span 4;
+    }
+
+    .case-study.edge p {
+        grid-column: span 4;
     }
 
     .image-card.small {
@@ -998,12 +1011,15 @@ input:checked+.slider:before {
         grid-column: span 4;
     }
 
+    .image-card.cover {
+        grid-column: span 4;
+    }
+
     .grid.scroll {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 1rem;
-        width: 100vw;
         margin-left: calc(-50vw + 50%);
         padding-left: 5vw;
     }
