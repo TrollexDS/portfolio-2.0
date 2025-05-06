@@ -55,6 +55,25 @@ function toggleNewdsImages() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    const loadingGrid = document.querySelector(".loading-grid");
+
+    if (loadingGrid) {
+        const hasVisited = sessionStorage.getItem("hasVisited");
+
+        if (!hasVisited) {
+            sessionStorage.setItem("hasVisited", "true");
+
+            setTimeout(() => {
+                loadingGrid.classList.add("fade-out");
+                setTimeout(() => {
+                    loadingGrid.classList.add("hidden");
+                }, 2000); // Matches the fade-out duration
+            }, 3000); // Matches the animation duration
+        } else {
+            loadingGrid.classList.add("hidden");
+        }
+    }
+
     // === DYNAMIC WORD TYPING ===
     const words = ["Product", "UX", "UI"];
     let currentWordIndex = 0;
