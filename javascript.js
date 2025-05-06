@@ -12,9 +12,9 @@ function copyToClipboard() {
 
 function toggleFinalImages() {
     const images = [
-        { id: "image-1", newSrc: "images/radio-schedule/FYP-final.png", oldSrc: "images/radio-schedule/original-fyp.png" },
-        { id: "image-2", newSrc: "images/radio-schedule/radio-page-final.png", oldSrc: "images/radio-schedule/original-radio.png" },
-        { id: "image-3", newSrc: "images/radio-schedule/schedule-page-final.png", oldSrc: "images/radio-schedule/original-schedule.png" }
+        { id: "image-1", newSrc: "images/radio-schedule/FYP-final.webp", oldSrc: "images/radio-schedule/original-fyp.webp" },
+        { id: "image-2", newSrc: "images/radio-schedule/radio-page-final.webp", oldSrc: "images/radio-schedule/original-radio.webp" },
+        { id: "image-3", newSrc: "images/radio-schedule/schedule-page-final.webp", oldSrc: "images/radio-schedule/original-schedule.webp" }
     ];
 
     images.forEach(({ id, newSrc, oldSrc }) => {
@@ -29,7 +29,7 @@ function toggleFinalImages() {
 
 function toggleNewdsImages() {
     const images = [
-        { id: "ds-1", newSrc: "images/rayo-ds/ds-old.png", oldSrc: "images/rayo-ds/ds-new.png" }
+        { id: "ds-1", newSrc: "images/rayo-ds/ds-old.webp", oldSrc: "images/rayo-ds/ds-new.webp" }
     ];
 
     const toggleButton = document.getElementById("toggle-images-button");
