@@ -354,7 +354,7 @@ p {
 }
 
 .project-card.medium.rayo-uxui {
-    background-image: url("images/rayo-gradient-background-primary.png");
+    background-image: url("images/project-card/rayo-gradient-background-primary.png");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -540,7 +540,7 @@ p {
 }
 
 .image-card.cover.schedule {
-    background-image: url('images/rayo-gradient-background-primary.png');
+    background-image: url('images/project-card/rayo-gradient-background-primary.png');
     background-size: cover;
 }
 
