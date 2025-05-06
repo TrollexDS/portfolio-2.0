@@ -1,7 +1,7 @@
 /* Primitive color tokens */
 :root {
     --grey-1000: rgb(1, 1, 1);
-    --grey-950: rgb(3, 3, 3);
+    --grey-950: rgb(10, 10, 10);
     --grey-900: rgba(26, 28, 28, 1);
     --grey-800: rgba(51, 52, 52, 1);
     --grey-600: rgba(88, 91, 91, 1);
@@ -305,7 +305,24 @@ p {
     background-size: cover;
     background-position: center;
     animation: blendImages 10s infinite;
-    z-index: 1;
+    z-index: 0;
+}
+
+.project-card.small.rayo-ds::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--surface-primary, rgba(0, 0, 0, 0.8));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+}
+
+.project-card.small.rayo-ds:hover::after {
+    opacity: 0.8;
 }
 
 @keyframes blendImages {
@@ -713,9 +730,6 @@ p {
 .image-card.cover {
     grid-column: span 6;
     width: 100%;
-    /*grid-column: 1 / -1;
-    width: 95vw;
-    margin-left: calc(-47.5vw + 50%);*/
 }
 
 a {
@@ -831,12 +845,10 @@ main>* {
     position: relative;
     display: inline-block;
     width: 2.5rem;
-    /* Updated width */
     height: 1.5rem;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    /* Ensure the toggle aligns with the text */
     cursor: none;
 }
 
@@ -923,7 +935,6 @@ input:checked+.slider:before {
 
     .project-card.medium.rayo-uxui {
         order: -1;
-        /* Move rayo-uxui to appear before rayo-figma-plugin */
     }
 
     .hero h1 {
@@ -987,18 +998,14 @@ input:checked+.slider:before {
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 1rem;
-        /* Adjust spacing between images */
         width: 100vw;
-        /* Full viewport width */
         margin-left: calc(-50vw + 50%);
-        /* Center align the grid */
         padding-left: 5vw;
     }
 
     .grid.scroll::after {
         content: '';
         flex: 0 0 5vw;
-        /* same as left padding */
     }
 
     .grid.scroll .image-card {
@@ -1056,12 +1063,10 @@ input:checked+.slider:before {
     .grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        /* Ensure gap is included */
     }
 
     .grid>* {
         margin-bottom: 1rem;
-        /* Add spacing to prevent overlap */
     }
 
     .hero {

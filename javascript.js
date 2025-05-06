@@ -12,9 +12,9 @@ function copyToClipboard() {
 
 function toggleFinalImages() {
     const images = [
-        { id: "image-1", newSrc: "radio-schedule/FYP-final.webp", oldSrc: "radio-schedule/original-fyp.webp" },
-        { id: "image-2", newSrc: "radio-schedule/radio-page-final.webp", oldSrc: "radio-schedule/original-radio.webp" },
-        { id: "image-3", newSrc: "radio-schedule/schedule-page-final.webp", oldSrc: "radio-schedule/original-schedule.webp" }
+        { id: "image-1", newSrc: "FYP-final.webp", oldSrc: "original-fyp.webp" },
+        { id: "image-2", newSrc: "radio-page-final.webp", oldSrc: "original-radio.webp" },
+        { id: "image-3", newSrc: "schedule-page-final.webp", oldSrc: "original-schedule.webp" }
     ];
 
     images.forEach(({ id, newSrc, oldSrc }) => {
