@@ -1,7 +1,7 @@
 /* Primitive color tokens */
 :root {
     --grey-1000: rgb(1, 1, 1);
-    --grey-950: rgb(10, 10, 10);
+    --grey-950: rgb(8, 8, 8);
     --grey-900: rgba(26, 28, 28, 1);
     --grey-800: rgba(51, 52, 52, 1);
     --grey-600: rgba(88, 91, 91, 1);
