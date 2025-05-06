@@ -279,7 +279,7 @@ p {
 }
 
 .project-card.small.simplestream-ds {
-    background-image: url('images/project-card/ss-iAP.png');
+    background-image: url('images/project-card/ss-iAP.webp');
     background-size: cover;
     background-position: center;
 }
@@ -354,7 +354,7 @@ p {
 }
 
 .project-card.medium.rayo-uxui {
-    background-image: url("images/project-card/rayo-gradient-background-primary.png");
+    background-image: url("images/project-card/rayo-gradient-background-primary.webp");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -548,7 +548,7 @@ p {
     border-radius: 1rem;
     grid-column: span 2;
     aspect-ratio: 4.6 / 10;
-    background-image: url('images/radio-schedule/radio-page-A-s.PNG');
+    background-image: url('images/radio-schedule/radio-page-A-s.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -562,7 +562,7 @@ p {
     border-radius: 1rem;
     grid-column: span 2;
     aspect-ratio: 4.6 / 10;
-    background-image: url('images/radio-schedule/radio-page-B-s.PNG');
+    background-image: url('images/radio-schedule/radio-page-B-s.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -576,7 +576,7 @@ p {
     border-radius: 1rem;
     grid-column: span 2;
     aspect-ratio: 4.6 / 10;
-    background-image: url('images/radio-schedule/radio-page-C-s.PNG');
+    background-image: url('images/radio-schedule/radio-page-C-s.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
