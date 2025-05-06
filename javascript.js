@@ -64,10 +64,12 @@ document.addEventListener("DOMContentLoaded", () => {
             sessionStorage.setItem("hasVisited", "true");
 
             setTimeout(() => {
-                loadingGrid.classList.add("fade-out");
-                setTimeout(() => {
-                    loadingGrid.classList.add("hidden");
-                }, 2000); // Matches the fade-out duration
+                setTimeout(() => { // Delay animation start by 1 second
+                    loadingGrid.classList.add("fade-out");
+                    setTimeout(() => {
+                        loadingGrid.classList.add("hidden");
+                    }, 2000); // Matches the fade-out duration
+                }, 1000); // 1-second delay
             }, 3000); // Matches the animation duration
         } else {
             loadingGrid.classList.add("hidden");

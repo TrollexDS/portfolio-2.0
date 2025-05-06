@@ -624,6 +624,10 @@ p {
     border-radius: 0.15rem;
 }
 
+.text-button {
+    grid-column: span 2;
+}
+
 .footer {
     font-size: 1.2rem;
     font-weight: 400;
@@ -636,17 +640,13 @@ p {
 }
 
 .rights {
-    grid-column: span 3;
+    grid-column: span 4;
     text-align: left;
     display: inline-flex;
     align-items: left;
 }
 
-.socials {
-    grid-column: span 2;
-    text-align: left;
-}
-
+.socials,
 .email {
     grid-column: span 1;
     text-align: left;
@@ -1029,16 +1029,6 @@ input:checked+.slider:before {
 
     .rights {
         grid-column: span 2;
-        text-align: left;
-    }
-
-    .socials {
-        grid-column: span 1;
-        text-align: left;
-    }
-
-    .email {
-        grid-column: span 1;
         text-align: left;
     }
 
