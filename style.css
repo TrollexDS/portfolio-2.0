@@ -310,32 +310,32 @@ p {
 
 @keyframes blendImages {
     0% {
-        background-image: url('images/rayo-gradients/gradient-1.png');
+        background-image: url('images/rayo-gradients/gradient-1.webp');
         opacity: 1;
     }
 
     20% {
-        background-image: url('images/rayo-gradients/gradient-2.png');
+        background-image: url('images/rayo-gradients/gradient-2.webp');
         opacity: 1;
     }
 
     40% {
-        background-image: url('images/rayo-gradients/gradient-3.png');
+        background-image: url('images/rayo-gradients/gradient-3.webp');
         opacity: 1;
     }
 
     60% {
-        background-image: url('images/rayo-gradients/gradient-4.png');
+        background-image: url('images/rayo-gradients/gradient-4.webp');
         opacity: 1;
     }
 
     80% {
-        background-image: url('images/rayo-gradients/gradient-5.png');
+        background-image: url('images/rayo-gradients/gradient-5.webp');
         opacity: 1;
     }
 
     100% {
-        background-image: url('images/rayo-gradients/gradient-1.png');
+        background-image: url('images/rayo-gradients/gradient-1.webp');
         opacity: 1;
     }
 }
