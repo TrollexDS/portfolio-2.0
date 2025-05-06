@@ -12,9 +12,9 @@ function copyToClipboard() {
 
 function toggleFinalImages() {
     const images = [
-        { id: "image-1", newSrc: "images/radio-schedule/FYP-final.webp", oldSrc: "images/radio-schedule/original-fyp.webp" },
-        { id: "image-2", newSrc: "images/radio-schedule/radio-page-final.webp", oldSrc: "images/radio-schedule/original-radio.webp" },
-        { id: "image-3", newSrc: "images/radio-schedule/schedule-page-final.webp", oldSrc: "images/radio-schedule/original-schedule.webp" }
+        { id: "image-1", newSrc: "radio-schedule/FYP-final.webp", oldSrc: "radio-schedule/original-fyp.webp" },
+        { id: "image-2", newSrc: "radio-schedule/radio-page-final.webp", oldSrc: "radio-schedule/original-radio.webp" },
+        { id: "image-3", newSrc: "radio-schedule/schedule-page-final.webp", oldSrc: "radio-schedule/original-schedule.webp" }
     ];
 
     images.forEach(({ id, newSrc, oldSrc }) => {
@@ -29,7 +29,7 @@ function toggleFinalImages() {
 
 function toggleNewdsImages() {
     const images = [
-        { id: "ds-1", newSrc: "images/rayo-ds/ds-old.webp", oldSrc: "images/rayo-ds/ds-new.webp" }
+        { id: "ds-1", newSrc: "rayo-ds/ds-old.webp", oldSrc: "rayo-ds/ds-new.webp" }
     ];
 
     const toggleButton = document.getElementById("toggle-images-button");

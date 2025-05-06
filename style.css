@@ -279,7 +279,7 @@ p {
 }
 
 .project-card.small.simplestream-ds {
-    background-image: url('images/project-card/ss-iAP.webp');
+    background-image: url('project-card/ss-iAP.webp');
     background-size: cover;
     background-position: center;
 }
@@ -310,32 +310,32 @@ p {
 
 @keyframes blendImages {
     0% {
-        background-image: url('images/rayo-gradients/gradient-1.webp');
+        background-image: url('rayo-gradients/gradient-1.webp');
         opacity: 1;
     }
 
     20% {
-        background-image: url('images/rayo-gradients/gradient-2.webp');
+        background-image: url('rayo-gradients/gradient-2.webp');
         opacity: 1;
     }
 
     40% {
-        background-image: url('images/rayo-gradients/gradient-3.webp');
+        background-image: url('rayo-gradients/gradient-3.webp');
         opacity: 1;
     }
 
     60% {
-        background-image: url('images/rayo-gradients/gradient-4.webp');
+        background-image: url('rayo-gradients/gradient-4.webp');
         opacity: 1;
     }
 
     80% {
-        background-image: url('images/rayo-gradients/gradient-5.webp');
+        background-image: url('rayo-gradients/gradient-5.webp');
         opacity: 1;
     }
 
     100% {
-        background-image: url('images/rayo-gradients/gradient-1.webp');
+        background-image: url('rayo-gradients/gradient-1.webp');
         opacity: 1;
     }
 }
@@ -354,7 +354,7 @@ p {
 }
 
 .project-card.medium.rayo-uxui {
-    background-image: url("images/project-card/rayo-gradient-background-primary.webp");
+    background-image: url("project-card/rayo-gradient-background-primary.webp");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -540,7 +540,7 @@ p {
 }
 
 .image-card.cover.schedule {
-    background-image: url('images/project-card/rayo-gradient-background-primary.webp');
+    background-image: url('project-card/rayo-gradient-background-primary.webp');
     background-size: cover;
 }
 
@@ -548,42 +548,42 @@ p {
     border-radius: 1rem;
     grid-column: span 2;
     aspect-ratio: 4.6 / 10;
-    background-image: url('images/radio-schedule/radio-page-A-s.webp');
+    background-image: url('radio-schedule/radio-page-A-s.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .gif-rpea:hover {
-    background-image: url('images/radio-schedule/radio-page-A.gif');
+    background-image: url('radio-schedule/radio-page-A.gif');
 }
 
 .gif-rpeb {
     border-radius: 1rem;
     grid-column: span 2;
     aspect-ratio: 4.6 / 10;
-    background-image: url('images/radio-schedule/radio-page-B-s.webp');
+    background-image: url('radio-schedule/radio-page-B-s.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .gif-rpeb:hover {
-    background-image: url('images/radio-schedule/radio-page-B.gif');
+    background-image: url('radio-schedule/radio-page-B.gif');
 }
 
 .gif-rpec {
     border-radius: 1rem;
     grid-column: span 2;
     aspect-ratio: 4.6 / 10;
-    background-image: url('images/radio-schedule/radio-page-C-s.webp');
+    background-image: url('radio-schedule/radio-page-C-s.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .gif-rpec:hover {
-    background-image: url('images/radio-schedule/radio-page-C.gif');
+    background-image: url('radio-schedule/radio-page-C.gif');
 }
 
 .about-card {
@@ -1023,15 +1023,15 @@ input:checked+.slider:before {
     }
 
     .gif-rpea {
-        background-image: url('images/radio-schedule/radio-page-A.gif')
+        background-image: url('radio-schedule/radio-page-A.gif')
     }
 
     .gif-rpeb {
-        background-image: url('images/radio-schedule/radio-page-B.gif')
+        background-image: url('radio-schedule/radio-page-B.gif')
     }
 
     .gif-rpec {
-        background-image: url('images/radio-schedule/radio-page-C.gif')
+        background-image: url('radio-schedule/radio-page-C.gif')
     }
 
     .hover-instruction {
