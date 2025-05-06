@@ -1105,10 +1105,6 @@ input:checked+.slider:before {
         grid-column: span 2;
     }
 
-    .hero h2 {
-        grid-column: span 2;
-    }
-
     .project-card,
     .project-card.small,
     .project-card.medium {
@@ -1126,10 +1122,6 @@ input:checked+.slider:before {
         margin-bottom: 2rem;
     }
 
-    .about-card {
-        grid-column: span 2;
-    }
-
     .about-card h4,
     .about-card p {
         max-width: 100%;
@@ -1140,15 +1132,21 @@ input:checked+.slider:before {
         grid-column: span 2;
     }
 
-    .product {
-        grid-column: span 2;
-    }
-
+    .hero h2,
+    .about-card,
+    .product,
     .role {
         grid-column: span 2;
     }
 
+    .case-study {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .case-study h3,
     .case-study p {
+        grid-column: span 2;
         max-width: 100%;
     }
 }
