@@ -1,0 +1,185 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="grid-background">
+        <div class="grid-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <main class="container">
+        <a href="home.html" class="back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="currentColor">
+                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+            </svg>
+        </a>
+        <section class="project-details section">
+            <div class="grid project">
+                <h1>Multi-brand design system</h1>
+                <div class="project-intro overview">
+                    <h4>Product</h4>
+                    <p>White labeled design system that support 50+ design files with different brandings.</p>
+                </div>
+                <div class="project-intro overview">
+                    <h4>Role</h4>
+                    <p>Design system lead</p>
+                </div>
+            </div>
+        </section>
+        <section class="project-content section">
+            <div class="grid">
+                <img class="image-card cover" src="images/ss-ds/ss-ds-cover.png"
+                    alt="Simplstream design system cover" />
+            </div>
+            <div class="case-study">
+                <h3>Overview</h3>
+                <p><a href="https://www.simplestream.com/" target="_blank" class="tooltip-container"> Simplestream <span
+                            class="tooltip">Open link</span></a> is a B2B OTT service provider. We design and build apps
+                    across all platforms including mobile, tablet, web, TV for clients across the globe. As a small team
+                    of 2, we need a relable way to efficiently switch between different clients' brandings and generate
+                    designs needed for production or sales proposals.</p>
+            </div>
+            <div class="grid project">
+                <div class="project-intro overview">
+                    <h4>Problem</h4>
+                    <p>We leveraged a third-party Figma plugin to save colors, fonts, and images as reusable themes,
+                        aimed to enable quick replacement of selected designs with pre-saved assets. However, due to the
+                        large number of screens in our projects, the plugin often took several minutes to process. This
+                        frequently caused Figma to freeze or glitch, leading to errors that required time-consuming
+                        manual checks and fixes.
+                    </p>
+                </div>
+                <div class="project-intro overview">
+                    <h4>Goal</h4>
+                    <p>Refactored our design system to adopt Figma’s newly introduced native “Swap Library” feature.
+                        This improved reliability, eliminated glitches and errors caused by the plugin, and reduced the
+                        time needed to switch between brand themes to just a few seconds.</p>
+                    </p>
+                </div>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/ss-ds/ss-mockups.png"
+                    alt="Simplestream mockups cover" />
+            </div>
+            <div class="case-study">
+                <h3>Colour variables</h3>
+                <p></p>
+            </div>
+            <div class="grid">
+                <img class="image-card square" src="images/rayo-ds/variables-primatives.png"
+                    alt="variables primatives" />
+                <img class="image-card square" src="images/rayo-ds/variables-tokens.png" alt="variables tokens" />
+            </div>
+            <div class="case-study">
+                <h3>Responsive and spacing</h3>
+                <p>We defined various sizes for spacing and radius to improve design consistancy. In addition, I also
+                    introduced breakpoints as variables to automate component swapping between different screen sizes.
+                </p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-ds/variables-automation.gif"
+                    alt="variables automation" />
+            </div>
+            <div class="case-study">
+                <h3>Components refractor</h3>
+                <p>Collection card is one of the few components that needed to be refractored. There were a total of 48
+                    variants for this one component, each showed the exact information, just with a different background
+                    or different padding optimised for tablet screen sizes.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-ds/component-optimisation.png"
+                    alt="Old Rayo component" />
+            </div>
+            <div class="case-study">
+                <p>Instead of using background configurations as the component variants, I created a separate background
+                    component hosting all the different positions and colours. Then it can be used in the collection
+                    card
+                    component as nested varients, which became a dropdown option from the panel tha can be easier
+                    changed, and therefore reduce the duplicated component variants.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-ds/component-refractor-gradients.png"
+                    alt="New gradient background component" />
+            </div>
+            <div class="case-study">
+                <p>The number of variants has been reduced from 48 to 4, and still provide the same level of
+                    configurations with all available colour and positions. This also benefited multiple components that
+                    required the same level of background configurations, and have their number of variants reduced.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-ds/collection module.png" alt="Collection module" />
+            </div>
+            <div class="case-study">
+                <h3>One for all</h3>
+                <p>As part of the design system optimisation, we auto-layout whenver we can. Since most of the
+                    components is exactly the same for both mobile and tablet, only with a different width. Auto layout
+                    done correctly means we can use the same variant for both mobile and tablet, by changeing the width
+                    on the UI designs.</p>
+            </div>
+            <div class="grid scroll">
+                <img class="image-card large" src="images/rayo-ds/miniplayer-component.png"
+                    alt="Mini-player component" />
+            </div>
+            <div class="case-study">
+                <h3>Layout</h3>
+                <p>The current page structure and layout cannot no longer cope with the rapid growing design system.
+                    There were too many components in one page, and the logic of component groups were ambiguous. Often
+                    times we have to go through a few pages to local the component.</p>
+                <p>I want to design a new layout so intuiative that even designers who doesn't have much experience
+                    with Figma, or new designers who just join the team to feel comfortable using it.</p>
+                <p>Instead of grouping components by ambiguous categories, I separate each component to have it's own
+                    page. Each page contains a title section, a component section, and an example section. The purpose
+                    of the example section is to showcase any hidden nested variants within the component, and to enable
+                    designers to copy and paste production ready instance directly into the production file.</p>
+            </div>
+            <div class="toggle-container">
+                <span class="toggle-label">Old</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="toggle-images-button" onclick="toggleNewdsImages()">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">New</span>
+            </div>
+            <div class="grid scroll">
+                <img class="image-card cover" id="ds-1" src="images/rayo-ds/ds-new.png" alt="New design system" />
+            </div>
+            <div class="case-study">
+                <h3>Naming convention</h3>
+                <p>We are currently auditing the names of every component, and changed defining the logic of how to name
+                    a component. Stay tuned for more</p>
+            </div>
+        </section>
+        <section class="footer section">
+            <div class="grid">
+                <div class="footer rights">
+                    <p>© 2025 Alex Chiu.</p>
+                </div>
+                <div class="footer socials">
+                    <a href="https://www.linkedin.com/in/alexmchiu/" target="_blank" class="tooltip-container">
+                        <p>LinkedIn</p>
+                        <span class="tooltip">Open LinkedIn</span>
+                    </a>
+                </div>
+                <div class="footer email">
+                    <p id="email" onclick="copyToClipboard()" class="tooltip-container">
+                        Email
+                        <span class="tooltip">Copy email address</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="javascript.js"></script>
+</body>

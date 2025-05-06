@@ -1,0 +1,188 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="grid-background">
+        <div class="grid-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <main class="container">
+        <a href="home.html" class="back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="currentColor">
+                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+            </svg>
+        </a>
+        <section class="project-details section">
+            <div class="grid project">
+                <h1>Rayo design system</h1>
+                <div class="project-intro overview">
+                    <h4>Product</h4>
+                    <p>Rayo cross-platform styles system and mobile app design system.</p>
+                </div>
+                <div class="project-intro overview">
+                    <h4>Role</h4>
+                    <p>Design system lead</p>
+                </div>
+            </div>
+        </section>
+        <section class="project-content section">
+            <div class="grid">
+                <img class="image-card cover" src="images/rayo-ds/rayo-ds-cover.png" alt="Rayo design system cover" />
+            </div>
+            <div class="case-study">
+                <h3>Overview</h3>
+                <p>The Rayo app is growing rapidly, so does the number of design components. Designers often got
+                    lost and overwhelmed in the design system file with so many components in each page.
+                    I proposed a design system restructure and developed a new organisation system to help my team
+                    navigate through the design system file.</p>
+            </div>
+            <div class="grid project">
+                <div class="project-intro overview">
+                    <h4>Problem</h4>
+                    <p> Nested instances often got overlooked when hidden from master component, resulted in many
+                        duplicated components. A dated colour token system not only required manual work switching
+                        between light and dark mode, but also created a lot of unnecessary vairiants, which led to human
+                        errors in production design.</p>
+                </div>
+                <div class="project-intro overview">
+                    <h4>Goal</h4>
+                    <p>Adopt variable system to manage colour tokens and automate light and dark mode. Reduce the number
+                        of variants with nested components. Design a scalable intuiative structure to organise design
+                        components. Indroduce dev mode into our workflow to improve developer handoff.
+                    </p>
+                </div>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-ds/rayo-ds-front-cover.png"
+                    alt="Rayo design system file cover" />
+            </div>
+            <div class="case-study">
+                <h3>Colour variables</h3>
+                <p>Following the <a
+                        href="https://help.figma.com/hc/en-us/articles/15145852043927-Create-and-manage-variables-and-collections"
+                        target="_blank" class="tooltip-container">
+                        Figma variable guidelines <span class="tooltip">Open link</span></a>, I worked with another
+                    designer to build primatives variables using colours from our brand style guide, then define our
+                    tokens in both light and dark mode.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card square" src="images/rayo-ds/variables-primatives.png"
+                    alt="variables primatives" />
+                <img class="image-card square" src="images/rayo-ds/variables-tokens.png" alt="variables tokens" />
+            </div>
+            <div class="case-study">
+                <h3>Responsive and spacing</h3>
+                <p>We defined various sizes for spacing and radius to improve design consistancy. In addition, I also
+                    introduced breakpoints as variables to automate component swapping between different screen sizes.
+                </p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-ds/variables-automation.gif"
+                    alt="variables automation" />
+            </div>
+            <div class="case-study">
+                <h3>Components refractor</h3>
+                <p>Collection card is one of the few components that needed to be refractored. There were a total of 48
+                    variants for this one component, each showed the exact information, just with a different background
+                    or different padding optimised for tablet screen sizes.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-ds/component-optimisation.png"
+                    alt="Old Rayo component" />
+            </div>
+            <div class="case-study">
+                <p>Instead of using background configurations as the component variants, I created a separate background
+                    component hosting all the different positions and colours. Then it can be used in the collection
+                    card
+                    component as nested varients, which became a dropdown option from the panel tha can be easier
+                    changed, and therefore reduce the duplicated component variants.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-ds/component-refractor-gradients.png"
+                    alt="New gradient background component" />
+            </div>
+            <div class="case-study">
+                <p>The number of variants has been reduced from 48 to 4, and still provide the same level of
+                    configurations with all available colour and positions. This also benefited multiple components that
+                    required the same level of background configurations, and have their number of variants reduced.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-ds/collection module.png" alt="Collection module" />
+            </div>
+            <div class="case-study">
+                <h3>One for all</h3>
+                <p>As part of the design system optimisation, we auto-layout whenver we can. Since most of the
+                    components is exactly the same for both mobile and tablet, only with a different width. Auto layout
+                    done correctly means we can use the same variant for both mobile and tablet, by changeing the width
+                    on the UI designs.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-ds/miniplayer-component.png"
+                    alt="Mini-player component" />
+            </div>
+            <div class="case-study">
+                <h3>Layout</h3>
+                <p>The current page structure and layout cannot no longer cope with the rapid growing design system.
+                    There were too many components in one page, and the logic of component groups were ambiguous. Often
+                    times we have to go through a few pages to local the component.</p>
+                <p>I want to design a new layout so intuiative that even designers who doesn't have much experience
+                    with Figma, or new designers who just join the team to feel comfortable using it.</p>
+                <p>Instead of grouping components by ambiguous categories, I separate each component to have it's own
+                    page. Each page contains a title section, a component section, and an example section. The purpose
+                    of the example section is to showcase any hidden nested variants within the component, and to enable
+                    designers to copy and paste production ready instance directly into the production file.</p>
+            </div>
+            <div class="toggle-container">
+                <span class="toggle-label">Old</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="toggle-images-button" onclick="toggleNewdsImages()">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">New</span>
+            </div>
+            <div class="grid">
+                <img class="image-card cover" id="ds-1" src="images/rayo-ds/ds-new.png" alt="New design system" />
+            </div>
+            <div class="case-study">
+                <h3>Next steps</h3>
+                <p>Every one has a different way of describing things, some called it a carousel, a rail, a playlist...
+                    Same elements are named differently in Figma, in iOS, in Android, and it causes miscommunication
+                    between teams. We are currently auditing feature/component names, and align with other teams on
+                    naming convension. Stay tuned for more</p>
+            </div>
+        </section>
+        <section class="footer section">
+            <div class="grid">
+                <div class="footer rights">
+                    <p>© 2025 Alex Chiu.</p>
+                </div>
+                <div class="footer socials">
+                    <a href="https://www.linkedin.com/in/alexmchiu/" target="_blank" class="tooltip-container">
+                        <p>LinkedIn</p>
+                        <span class="tooltip">Open LinkedIn</span>
+                    </a>
+                </div>
+                <div class="footer email">
+                    <p id="email" onclick="copyToClipboard()" class="tooltip-container">
+                        Email
+                        <span class="tooltip">Copy email address</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="javascript.js"></script>
+</body>

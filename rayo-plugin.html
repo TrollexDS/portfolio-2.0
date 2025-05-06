@@ -1,0 +1,203 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="grid-background">
+        <div class="grid-container">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <main class="container">
+        <a href="home.html" class="back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="64" height="64" fill="currentColor">
+                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z" />
+            </svg>
+        </a>
+        <section class="project-details section">
+            <div class="grid project">
+                <h1>Rayo plugin</h1>
+                <div class="project-intro overview">
+                    <h4>Product</h4>
+                    <p>Rayo plugin enables designers to pull a library of assets and metadata from the Bauer API, and
+                        applies directly onto designs.</p>
+                </div>
+                <div class="project-intro overview">
+                    <h4>Role</h4>
+                    <p>Research, Product Design, Testing, Development</p>
+                </div>
+            </div>
+        </section>
+        <section class="project-content section">
+            <div class="grid">
+                <img class="image-card cover" src="images/rayo-plugin/rayo-plugin-cover.png" alt="Rayo plugin cover" />
+            </div>
+            <div class="case-study">
+                <h3>Overview</h3>
+                <p>As someone who is always looking for ways to streamline or automate processes, I initiated this
+                    project with an aim to help my team speed up the UI design tasks, such as explorations, creating
+                    user testing mockups, building production ready designs.</p>
+            </div>
+            <div class="grid project">
+                <div class="project-intro overview">
+                    <h4>Problem</h4>
+                    <p>It requires too much effort from the design team to build and maintain a large library of assets
+                        in Figma for many different brands from multiple regions that change overtime.</p>
+                </div>
+                <div class="project-intro overview">
+                    <h4>Goal</h4>
+                    <p>To build a Figma plugin that can provide live assets from all of the brands from all of the
+                        regions we serve.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-plugin/rayo-plugin-overview.gif"
+                    alt="Rayo plugin demo" />
+            </div>
+            <div class="case-study">
+                <h3>Why</h3>
+                <p>Besides speeding up the making of our production designs, there is another major reason why we want
+                    to build our designs as accurate as possible.</p>
+                <p>We test our designs with some of our loyal listeners who are very passionate about their favourite
+                    stations. Despite our disclaimer about the prototype was only put together for testing specific
+                    features, not everything works and might not reflect the actual application. They always notice
+                    abnormality and would point out things such as, “this show is not suppose to be here”. We now build
+                    accurate designs to avoid these kinds of feedback that could waste valuable testing time.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-plugin/Rayo-app-user-testing.png"
+                    alt="Rayo app user testing" />
+            </div>
+            <div class="case-study">
+                <h3>POC</h3>
+                <p>I began with running a local server pulling images from a folder with thumbnail images. The plugin
+                    doesn’t even have UI. When initialed, it updates all the layers that matched the required layer
+                    names within the selected frame(s).</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-plugin/rayo-plugin-local-server.png"
+                    alt="Images saved in a local folder" />
+            </div>
+            <div class="case-study">
+                <h3>Navigation</h3>
+                <p>I took a lot of inspiration from Music Data. It is a plugin that allows users to search for songs and
+                    update designs with album artworks, title, artists etc.</p>
+                <p>Since not everyone is familiar with all of the station names, I instead build a dropdown to list out
+                    stations for my team to choose from.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card square" src="images/rayo-plugin/dropdown.png" alt="Rayo plugin dropdown" />
+                <img class="image-card square" src="images/rayo-plugin/dropdown-expanded.png"
+                    alt="Rayo plugin dropdown expanded" />
+            </div>
+            <div class="case-study">
+                <h3>Setting up the logic</h3>
+                <p>I defined requirements for the plugin to identify the correct layers to update. E.g.
+                    A shape layer with the name show-thumbnail, the fill will be replaced with the selected radio show
+                    thumbnail image.
+                    A text layer with the name show-name, the text string will be replaced with the title of the radio
+                    show.
+                    I added more as I build more functions into the plugin, but the naming principles are the same.</p>
+                <p>I built a notification prompt to appear when none of the selected layers matched the requirements, it
+                    lists out the layer names required.</p>
+                <p>I also wrote a documentation in Confluence to explain how the codes were structured, and instructions
+                    on layer names and how it works.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-plugin/confluence-documentation.png"
+                    alt="Rayo plugin confluence documentation" />
+            </div>
+            <div class="case-study">
+                <h3>Connecting to the API</h3>
+                <p>With my limited coding skill, I reached out to a full stack developer I worked closely for
+                    assistance. He helped me with the CORS issues, and provided the appropriate API to be used to
+                    fetch stations and shows.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card large" src="images/rayo-plugin/Bauer-listen-api.png" alt="Rayo plugin API" />
+            </div>
+            <div class="case-study">
+                <h3>Adding podcasts</h3>
+                <p>My teammates were working on the Podcast V2 designs, and was thinking it would be nice to have
+                    podcasts available in the plugin.</p>
+                <p>When I was adding podcasts, knowing that the Rayo app can filter podcasts by genres, meaning we have
+                    to mockup designs that display podcasts from a specific genre. To make our lives easier, I also
+                    build a genre filter in the plugin.</p>
+            </div>
+            <div class="grid scroll">
+                <img class="image-card small" src="images/rayo-plugin/rayo-podcast-page.png"
+                    alt="Rayo app podcast page" />
+                <img class="image-card small" src="images/rayo-plugin/rayo-podcast-onboarding.png"
+                    alt="Rayo app podcast onboarding screen" />
+                <img class="image-card small" src="images/rayo-plugin/rayo-plugin-window.png"
+                    alt="Rayo plugin window" />
+            </div>
+            <div class="case-study">
+                <h3>Other regions</h3>
+                <p>Rayo is going be available for 8 regions outside the UK: Ireland, Poland, Portugal, Slovakia,
+                    Denmark, Sweden, Finland and Norway. Each have slightly different configurations based on the UK
+                    Rayo app.</p>
+                <p>I was tasked with designing the For You page (personalised homepage). To make my life easier, I want
+                    the plugin to be able to provide assets from other regions as well. I got the API for other regions
+                    by reaching out to the iOS dev who was building the POC of the Rayo app for other regions.</p>
+                <p>Due to the fact that APIs from some of the regions are not ready, I decided to hard coded the
+                    available ones in, and add more when the others are ready.</p>
+            </div>
+            <div class="grid scroll">
+                <img class="image-card small" src="images/rayo-plugin/rayo-app-sweden.png" alt="Rayo app Swedish" />
+                <img class="image-card small" src="images/rayo-plugin/rayo-plugin-sweden.png"
+                    alt="Rayo plugin with swedish content" />
+                <img class="image-card small" src="images/rayo-plugin/rayo-plugin-regions.png"
+                    alt="Rayo plugin with content from other regions" />
+            </div>
+            <div class="case-study">
+                <h3>Episode data</h3>
+                <p>Since the beginning of the project, I always wanted to make episode level data available because
+                    there are quite a few components that display episode metadata. I just didn’t know how to build it
+                    in. However, as I got more familiar with the structure of the APIs, I was more confident to build
+                    logic to fetch assets and data from multiple APIs to make it work.</p>
+            </div>
+            <div class="grid">
+                <img class="image-card flex" src="images/rayo-plugin/rayo-plugin-demo.gif"
+                    alt="Rayo plugin episode demo" />
+            </div>
+            <div class="case-study">
+                <h3>Always evolving</h3>
+                <p>I am always thinking how to help the team and to make our work easier. The next step is to find a way
+                    to populate the whole page with metadata based on requirements with a click of a button. Stay tune
+                    for more.</p>
+            </div>
+        </section>
+        <section class="footer section">
+            <div class="grid">
+                <div class="footer rights">
+                    <p>© 2025 Alex Chiu.</p>
+                </div>
+                <div class="footer socials">
+                    <a href="https://www.linkedin.com/in/alexmchiu/" target="_blank" class="tooltip-container">
+                        <p>LinkedIn</p>
+                        <span class="tooltip">Open LinkedIn</span>
+                    </a>
+                </div>
+                <div class="footer email">
+                    <p id="email" onclick="copyToClipboard()" class="tooltip-container">
+                        Email
+                        <span class="tooltip">Copy email address</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="javascript.js"></script>
+</body>
