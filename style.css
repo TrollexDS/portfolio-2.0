@@ -1135,7 +1135,8 @@ input:checked+.slider:before {
     .hero h2,
     .about-card,
     .product,
-    .role {
+    .role,
+    .image-card.medium {
         grid-column: span 2;
     }
 
