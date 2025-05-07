@@ -1,21 +1,22 @@
 <head>
-  <link rel="stylesheet" href="../style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Alex is Product Designer specialised in media and entertainment product development across mobile, tablet, TV, web, and voice (smart speaker). He help companies build user centric products and scalable design systems.">
-  <meta name="keywords" content="Figma, Figma plugin, UX, UI, Design system">
-  <meta property="og:title" content="Alex Chiu | Multi-brand design system case study">
-  <meta property="og:description"
-    content="Alex is Product Designer specialised in media and entertainment product development across mobile, tablet, TV, web, and voice (smart speaker). He help companies build user centric products and scalable design systems.">
-  <meta property="og:image" content="https://mchiu.co.uk/og-image.png">
-  <meta property="og:url" content="https://mchiu.co.uk/">
-  <meta property="og:type" content="website">
-  <title>Alex Chiu | Multi-brand design system case study</title>
-  <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Alex is Product Designer specialised in media and entertainment product development across mobile, tablet, TV, web, and voice (smart speaker). He help companies build user centric products and scalable design systems.">
+    <meta name="keywords" content="Figma, Figma plugin, UX, UI, Design system">
+    <meta property="og:title" content="Alex Chiu | Multi-brand design system case study">
+    <meta property="og:description"
+        content="Alex is Product Designer specialised in media and entertainment product development across mobile, tablet, TV, web, and voice (smart speaker). He help companies build user centric products and scalable design systems.">
+    <meta property="og:image" content="https://mchiu.co.uk/og-image.png">
+    <meta property="og:url" content="https://mchiu.co.uk/">
+    <meta property="og:type" content="website">
+    <title>Alex Chiu | Multi-brand design system case study</title>
+    <link rel="icon" href="../favicon.png" type="image/png">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-  </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
 </head>
 
 <body>
@@ -50,8 +51,7 @@
         </section>
         <section class="project-content section">
             <div class="grid">
-                <img class="image-card cover" src="images/ss-ds/ss-ds-cover.webp"
-                    alt="Simplstream design system cover" />
+                <img class="image-card cover" src="ss-ds-cover.webp" alt="Simplstream design system cover" />
             </div>
             <div class="case-study edge">
                 <h3>Overview</h3>
@@ -80,98 +80,64 @@
                 </div>
             </div>
             <div class="grid">
-                <img class="image-card cover" src="ss-mockups.webp"
-                    alt="Simplestream mockups cover" />
+                <img class="image-card cover" src="ss-mockups.webp" alt="Simplestream mockups cover" />
             </div>
             <div class="case-study">
-                <h3>Colour variables</h3>
-                <p></p>
+                <h3>Design system refractor</h3>
+                <p>In order to adopt the Figma swap library feature, I defined a new sructure and rename every token or
+                    layers of the following:</p>
+            </div>
+            <div class="case-study">
+                <h3>Colour tokens</h3>
+                <p>Our colour token template contains a wide range of component-specific color tokens, giving our
+                    clients greater flexibility to
+                    customize the look and feel of their apps.</p>
+                <p>In order for these tokens to be compatible with the Figma swap library feature, I defined a new
+                    sructure and rename every token.</p>
             </div>
             <div class="grid">
-                <img class="image-card square" src="variables-primatives.webp"
-                    alt="variables primatives" />
-                <img class="image-card square" src="variables-tokens.webp" alt="variables tokens" />
+                <img class="image-card cover" src="ss-ds-colours.webp" alt="Colour tokens" />
             </div>
             <div class="case-study">
-                <h3>Responsive and spacing</h3>
-                <p>We defined various sizes for spacing and radius to improve design consistancy. In addition, I also
-                    introduced breakpoints as variables to automate component swapping between different screen sizes.
-                </p>
+                <h3>Imagery</h3>
+                <p>We also created a template for the 16:9 video thumbnails used throughout the app. We would replace
+                    these placeholder images with content sourced from clients’ websites, sometimes for production-ready
+                    designs, other times for sales proposals.</p>
             </div>
             <div class="grid">
-                <img class="image-card large" src="variables-automation.gif" alt="variables automation" />
+                <img class="image-card cover" src="ss-ds-images.webp" alt="Image library" />
             </div>
             <div class="case-study">
-                <h3>Components refractor</h3>
-                <p>Collection card is one of the few components that needed to be refractored. There were a total of 48
-                    variants for this one component, each showed the exact information, just with a different background
-                    or different padding optimised for tablet screen sizes.</p>
+                <h3>Typeface</h3>
+                <p>Font styles are fixed in size and weight to ensure text remains visible and the app stays accessible.
+                    However, we give clients the flexibility to choose a single typeface to be used consistently across
+                    all their apps.</p>
             </div>
             <div class="grid">
-                <img class="image-card large" src="component-optimisation.webp" alt="Old Rayo component" />
+                <img class="image-card cover" src="ss-ds-typeface.webp" alt="Typeface library" />
             </div>
             <div class="case-study">
-                <p>Instead of using background configurations as the component variants, I created a separate background
-                    component hosting all the different positions and colours. Then it can be used in the collection
-                    card
-                    component as nested varients, which became a dropdown option from the panel tha can be easier
-                    changed, and therefore reduce the duplicated component variants.</p>
-            </div>
-            <div class="grid">
-                <img class="image-card large" src="component-refractor-gradients.webp" alt="New gradient background component" />
-            </div>
-            <div class="case-study">
-                <p>The number of variants has been reduced from 48 to 4, and still provide the same level of
-                    configurations with all available colour and positions. This also benefited multiple components that
-                    required the same level of background configurations, and have their number of variants reduced.</p>
-            </div>
-            <div class="grid">
-                <img class="image-card large" src="images/rayo-ds/collection module.webp" alt="Collection module" />
-            </div>
-            <div class="case-study">
-                <h3>One for all</h3>
-                <p>As part of the design system optimisation, we auto-layout whenver we can. Since most of the
-                    components is exactly the same for both mobile and tablet, only with a different width. Auto layout
-                    done correctly means we can use the same variant for both mobile and tablet, by changeing the width
-                    on the UI designs.</p>
+                <h3>Components</h3>
+                <p>All the components and UI design templates are linked with the template theme files ready for swap library.</p>
             </div>
             <div class="grid scroll">
-                <img class="image-card large" src="images/rayo-ds/miniplayer-component.webp"
-                    alt="Mini-player component" />
+                <img class="image-card square" src="ui-collage.webp" alt="UI design collage" />
+                <img class="image-card square" src="ds-components.webp" alt="Design components" />
+                <img class="image-card square" src="ds-icons.webp" alt="Design icons" />
             </div>
             <div class="case-study">
-                <h3>Layout</h3>
-                <p>The current page structure and layout cannot no longer cope with the rapid growing design system.
-                    There were too many components in one page, and the logic of component groups were ambiguous. Often
-                    times we have to go through a few pages to local the component.</p>
-                <p>I want to design a new layout so intuiative that even designers who doesn't have much experience
-                    with Figma, or new designers who just join the team to feel comfortable using it.</p>
-                <p>Instead of grouping components by ambiguous categories, I separate each component to have it's own
-                    page. Each page contains a title section, a component section, and an example section. The purpose
-                    of the example section is to showcase any hidden nested variants within the component, and to enable
-                    designers to copy and paste production ready instance directly into the production file.</p>
-            </div>
-            <div class="toggle-container">
-                <span class="toggle-label">Old</span>
-                <label class="toggle-switch">
-                    <input type="checkbox" id="toggle-images-button" onclick="toggleNewdsImages()">
-                    <span class="slider"></span>
-                </label>
-                <span class="toggle-label">New</span>
+                <h3>Swap library</h3>
+                <p>Every time we onboard a new client, we duplicate our templates and set up a custom theme. By swapping the design library, we can instantly apply the client’s unique look and feel. This approach has allowed my team of 2 designers to efficiently manage and deliver a large library of client designs with ease.</p>
             </div>
             <div class="grid scroll">
-                <img class="image-card cover" id="ds-1" src="images/rayo-ds/ds-new.webp" alt="New design system" />
-            </div>
-            <div class="case-study">
-                <h3>Naming convention</h3>
-                <p>We are currently auditing the names of every component, and changed defining the logic of how to name
-                    a component. Stay tuned for more</p>
+                <img class="image-card cover" src="swap-library.webp" alt="Swap library" />
             </div>
         </section>
         <section class="next-step section">
             <div class="grid">
                 <a href="../index.html#projects" class="text-button">Other case studies</a>
-                <a href="#" class="text-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to Top</a>
+                <a href="#" class="text-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">Back to
+                    Top</a>
             </div>
         </section>
         <section class="footer section">
